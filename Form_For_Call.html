@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <style>
+        body{
+            background-color: rgb(161, 212, 238);
+            color: rgb(13, 21, 126);
+            margin: 0px;
+            padding: auto;
+        }
+        input{
+            width: 500px;
+        }
+        #date{
+            width: 250px;
+        }
+        #time{
+            width: 243px;
+        }
+        button{
+            width: 505px;
+            background-color: rgb(63, 72, 200);
+            color: white; 
+        }
+        label{
+            text-align: left;
+            text-align-last: right; 
+        }    
+        form{
+            border: 2px solid;
+            width: 510px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        h1{
+            text-align: center;
+        }
+        .form-center {
+            margin-left: auto ;
+            margin-right: auto ;
+            width: 523px;
+            position: static;
+            background-color: rgb(227, 225, 225);
+        }
+        body::before {
+            font-size: 2rem;
+            font-weight: bold;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+            /* This box class is purely used for explaining how the bootstrap grid system works. */
+        .box {
+            background-color: lightblue;
+            border: 1px solid blue;
+            min-height: 50px;
+            font-size: 2rem;
+        }      
+    </style>
+</head>
+<body style="align-items: center;">
+    <div class="form-center">    
+        <form action="#" onsubmit="signup(event)">
+            <h1>Book a call</h1>
+            <hr>
+            <lable for="name">Name:</lable><br>
+            <input type="text" id="name" name="name" required><br>
+            <lable for="mail" >Mail:</lable><br>
+            <input type="mail" id="mail" name="mail" required><br>
+            <lable for="phone">Phone:</lable><br>
+            <input type="tel" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+            <label for="call">Time for Call</label><br>
+            <input type="date" id="date" name="date">
+            <input type="time" id="time" name="time"><br><br>
+            <button value="submit">Get a Call</button>        
+        </form>
+    </div>
+    <script src="js_index.html"></script>
+</body>
+</html>
