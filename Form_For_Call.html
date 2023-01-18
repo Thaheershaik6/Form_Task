@@ -79,6 +79,15 @@
             <button value="submit">Get a Call</button>        
         </form>
     </div>
-    <script></script>
+    <script>
+            function signup(event){
+            event.preventDefault();
+            console.log(event.target.name.value);
+            console.log(event.target.mail.value);
+            console.log(event.target.phone.value);
+            console.log(event.target.date.value);
+            console.log(event.target.time.value);
+            }
+    </script>
 </body>
 </html>
